@@ -6,8 +6,7 @@ const initialState = {
 module.exports = function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case "LOGIN_SUCCESS": {
-      state.accessToken = action.payload;
-      return state;
+      return { ...state, accessToken: action.payload };
     }
 
     default: {
