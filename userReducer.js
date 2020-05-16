@@ -1,1 +1,5 @@
-module.exports = function reducer() {};
+const initialState = {};
+
+module.exports = function reducer() {
+  return initialState;
+};
