@@ -13,6 +13,10 @@ module.exports = function reducer(state = initialState, action = {}) {
       return { ...state, me: action.payload };
     }
 
+    case "LOGOUT": {
+      return initialState;
+    }
+
     default: {
       return state;
     }
