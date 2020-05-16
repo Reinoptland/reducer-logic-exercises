@@ -24,6 +24,11 @@ module.exports = function reducer(state = initialState, action = {}) {
       return { ...state, me: { ...state.me, email: action.payload } };
     }
 
+    case "UPDATE_PROFILE_INTRO": {
+      state.me.intro = action.payload;
+      return state;
+    }
+
     default: {
       return state;
     }
