@@ -10,8 +10,7 @@ module.exports = function reducer(state = initialState, action = {}) {
     }
 
     case "FETCH_PROFILE_SUCCESS": {
-      state.me = action.payload;
-      return state;
+      return { ...state, me: action.payload };
     }
 
     default: {
