@@ -39,16 +39,9 @@ module.exports = function reducer(state = initialState, action = {}) {
     }
 
     case "UPDATE_PROFILE": {
-      // long solution without using the spread operator ...
-      const profileCopy = { ...state.me };
-      // get an array of keys that need to be changed using Object.keys
-      const keysToChange = Object.keys(action.payload);
-      // iterate over the keys and change all of the values of those keys on the profile on the profile
-      keysToChange.forEach((key) => {
-        profileCopy[key] = action.payload[key];
-      });
-      // set the state at the end
-      return { ...state, me: profileCopy };
+      // easy solution with the spread operator:
+      // simply spread the action payload
+      return { ...state, me: { ...state.me, ...action.payload } };
     }
 
     default: {
