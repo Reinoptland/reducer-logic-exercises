@@ -43,3 +43,6 @@ Each exercise comes with a set of solutions. They are put on a branch. You can s
 
 - Look at the files on github (use the links below)
 - Checkout the branches locally (make sure to commit your own changes before you do so)
+
+[User reducer solutions](https://github.com/Reinoptland/reducer-logic-exercises/blob/user-reducer-solutions/userReducer.js)
+[User reducer solutions on git history](https://github.githistory.xyz/Reinoptland/reducer-logic-exercises/blob/user-reducer-solutions/userReducer.js)
