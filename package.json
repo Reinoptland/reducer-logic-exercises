@@ -1,0 +1,31 @@
+{
+  "name": "reducer-logic",
+  "version": "1.0.0",
+  "description": "A repo with exercises to practice writing reducer functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reinoptland/reducer-logic-exercises.git"
+  },
+  "keywords": [
+    "redux",
+    "jest",
+    "exercises",
+    "pure functions",
+    "functional programming"
+  ],
+  "author": "Rein Op 't Land",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Reinoptland/reducer-logic-exercises/issues"
+  },
+  "homepage": "https://github.com/Reinoptland/reducer-logic-exercises#readme",
+  "dependencies": {
+    "jest": "^26.0.1",
+    "redux": "^4.0.5"
+  }
+}
