@@ -14,7 +14,7 @@ module.exports = function reducer(state = initialState, action = {}) {
     }
 
     case "LOGOUT": {
-      return initialState;
+      return { ...initialState };
     }
 
     default: {
