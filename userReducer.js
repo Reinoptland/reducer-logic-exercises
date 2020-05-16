@@ -4,5 +4,14 @@ const initialState = {
 };
 
 module.exports = function reducer(state = initialState, action = {}) {
-  return state;
+  switch (action.type) {
+    case "LOGIN_SUCCESS": {
+      state.accessToken = action.payload;
+      return state;
+    }
+
+    default: {
+      return state;
+    }
+  }
 };
