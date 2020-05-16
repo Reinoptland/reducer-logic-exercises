@@ -9,6 +9,11 @@ module.exports = function reducer(state = initialState, action = {}) {
       return { ...state, accessToken: action.payload };
     }
 
+    case "FETCH_PROFILE_SUCCESS": {
+      state.me = action.payload;
+      return state;
+    }
+
     default: {
       return state;
     }
