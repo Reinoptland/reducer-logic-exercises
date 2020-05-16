@@ -32,8 +32,7 @@ module.exports = function reducer(state = initialState, action = {}) {
     }
 
     case "UPDATE_PROFILE_WEBSITE": {
-      state.me.website = action.payload;
-      return state;
+      return { ...state, me: { ...state.me, website: action.payload } };
     }
 
     default: {
