@@ -38,6 +38,18 @@ module.exports = function reducer(state = initialState, action = {}) {
       return { ...state, me: { ...state.me, website: action.payload } };
     }
 
+    case "UPDATE_PROFILE": {
+      // long solution without using the spread operator ...
+      // get an array of keys that need to be changed using Object.keys
+      const keysToChange = Object.keys(action.payload);
+      // iterate over the keys and change all of the values of those keys on the profile on the profile
+      keysToChange.forEach((key) => {
+        state.me[key] = action.payload[key];
+      });
+      // set the state at the end
+      return state;
+    }
+
     default: {
       return state;
     }
